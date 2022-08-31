@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: getColor("primary");
+  font-family: "Roboto", "Raleway", "Montserrat", sans-serif;
+  background-color: getColor("secondary");
+}
+ul {
+  list-style-type: none;
+}

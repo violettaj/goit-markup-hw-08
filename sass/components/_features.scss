@@ -1,0 +1,33 @@
+.features__list {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: getColor("descriptions");
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.features__icons {
+  background-color: getColor("background");
+  border-radius: 4px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features__title {
+  font-weight: 700;
+  line-height: 1.1;
+  color: getColor("primary");
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.features__description {
+  margin-bottom: -94px;
+}
