@@ -1,13 +1,50 @@
-.clients {
-  display: flex;
+@media screen and (min-width:320px) and (max-width: 768px) {
+  .clients {
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .clients__icons {
+    width: 210px;
+    height:92px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width:1200px){
+  .clients {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clients__icons {
+    flex-basis: calc(100%/3);
+    width: 226px;
+    height:92px;
+  }
+}
+
+@media screen and (min-width: 1200px) { 
+  .clients{
+    display: flex;
   flex-direction: row;
+  }
+  .clients__icons {
+    width: 170px;
+  height: 92px;
+  }
+}
+
+
+
+
+.clients {
+  
   gap: 30px;
 }
 .clients__icons {
   border: 1px solid getColor("icons");
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
+  
   display: flex;
   align-items: center;
   justify-content: center;

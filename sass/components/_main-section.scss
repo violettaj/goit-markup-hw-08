@@ -1,26 +1,96 @@
-.section--main {
-  padding-top: 280px;
-  background-color: getColor("main");
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 280px;
-  background-image: url(../images/background.jpg), url(../images/overlay.png);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  max-width: 1600px;
-  background-size: cover;
-  width: 100%;
-  margin: 0 auto;
-  height: 600px;
-}
-
-h1 {
-  font-weight: 900;
-  font-size: 44px;
-  color: getColor("secondary");
-  line-height: 1.4;
-  letter-spacing: 0.06em;
-  margin-bottom: 30px;
-}
+@media screen and (min-width:320px) and (max-width:768px) {
+  .section--main{
+    background-image: url(../images/mobile-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: getColor("main");
+    background-position: center top;
+    background-size: 480px 400px;
+    text-align: center;
+    padding-bottom: 60px;
+    
+  }
+  h1{
+    font-size: 26px;
+    line-height: 1.6;
+  }
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width:320px) and (max-width:768px),
+    screen and (min-resolution: 192dpi) and (min-width:320px) and (max-width:768px),
+    screen and (min-resolution: 2dppx) and (min-width:320px) and (max-width:768px) {
+    .section--main {
+      background-image: url(../images/mobile-bg@2x.jpg);
+    }
+  }
+  
+  
+  @media screen and (min-width:768px) {
+    .section--main{
+      background-image: url(../images/tablet-bg.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-color: getColor("main");
+      background-position: center top;
+      background-size: 768px 400px;
+      text-align: center;
+     
+      
+    }
+    h1{
+      font-size: 26px;
+      line-height: 1.6;
+    }
+  }
+  
+  @media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
+    screen and (min-resolution: 192dpi) and (min-width:768px),
+    screen and (min-resolution: 2dppx) and (min-width:768px) {
+    .section--main {
+      background-image: url(../images/tablet-bg@2x.jpg);
+    }
+  }
+  
+  @media screen and (min-width:1200px){
+    .section--main{
+    background-color: getColor("main");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../images/bg.jpg), url(../images/overlay.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    max-width: 1600px;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    height: 600px;
+    padding-top: 280px;
+      padding-bottom: 280px;
+      
+  }
+  h1{
+    font-size: 44px;
+    line-height: 1.4;
+  }
+  }
+  
+  @media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
+    screen and (min-resolution: 192dpi) and (min-width:1200px),
+    screen and (min-resolution: 2dppx) and (min-width:1200px) {
+    .section--main {
+      background-image: url(../images/bg@2x.jpg);
+      
+    }
+  }
+  
+  
+  
+  h1 {
+    font-weight: 900;
+    color: getColor("secondary");
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
+    
+  }
+  

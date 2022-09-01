@@ -1,8 +1,79 @@
-.filtres {
-  display: flex;
+@media screen and (min-width:320px) and (max-width: 768px) {
+  .filtres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+   }
+   .filtres__btn--first {
+    width: 103px;
+    height: 38px;
+  }
+  
+  .filtres__btn--second {
+    width: 128px;
+    height: 38px;
+  }
+  
+  .filtres__btn--third {
+    width: 145px;
+    height: 38px;
+  }
+  
+  .filtres__btn--fourth {
+    width: 103px;
+    height: 38px;
+  }
+  
+  .filtres__btn--fifth {
+    width: 130px;
+    height: 38px;
+  }
+  
+ }
+ @media screen and (min-width: 768px) and (max-width:1200px){
+   .filtres {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+   }
+   .filtres__btn--first {
+    width: 103px;
+    height: 38px;
+  }
+  
+  .filtres__btn--second {
+    width: 128px;
+    height: 38px;
+  }
+  
+  .filtres__btn--third {
+    width: 145px;
+    height: 38px;
+  }
+  
+  .filtres__btn--fourth {
+    width: 103px;
+    height: 38px;
+  }
+  
+  .filtres__btn--fifth {
+    width: 130px;
+    height: 38px;
+  }
+ }
+ 
+ @media screen and (min-width: 1200px) {
+  .filtres {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+   }
+ }
+
+
+.filtres { 
   gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
 }
 
 .filtres__btn {
