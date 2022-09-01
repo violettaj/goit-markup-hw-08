@@ -1,0 +1,120 @@
+.js-menu-container {
+    width: 480px;
+    height: 796px;
+    border: none;
+    padding-left: 40px;
+    z-index: 999;
+    background: getColor('secondary');
+    transform: translateX(0);
+    visibility: hidden;
+    transition-property: transform, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+   
+  }
+  .js-menu-container .is-open {
+    transform: translateX(100%);
+  }
+  .is-open {
+    visibility: visible;
+  }
+  
+  .js-close-menu {
+    background: getColor('secondary');
+    border:none;
+    text-align: right;
+  }
+  .js-open-menu {
+    background: getColor('secondary');
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border:none;
+  }
+  .mobile__close-btn {
+   background-color: getColor('secondary') ;
+   
+   margin-right: 15px;
+   margin-top:10px;
+
+    &:hover,
+    &:focus {
+      fill: getColor('decorations');
+    }
+  }
+  .mobile-nav__link {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: getColor('primary');
+    &:hover,
+    &:focus {
+      color: getColor('decorations');
+    }
+  }
+  .mobile-nav__link:first-child {
+    padding-bottom:36px;
+  }
+  
+  .mobile-nav__link:nth-child(3) {
+    padding-top: 36px;
+    
+  }
+  
+  .mobile__contact {
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  
+    &--tel {
+      font-size: 34px;
+      line-height: 1.176;
+      color: get-color(action);
+    
+    }
+    &--mail {
+      font-size: 24px;
+      line-height: 1.167;
+      color: get-color(contact);
+      padding-top: 32px;
+      padding-bottom: 64px;
+    }
+  }
+  
+  .mobile-menu {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 48px;
+  }
+  .mobile-menu__item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 0.02em;
+    color: getColor('primary');
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #21212133;
+    &--first {
+      padding-left: 0px;
+    }
+    &--last {
+      border-right: none;
+    }
+  }
+
+  .mobile-nav {
+    margin-bottom: 302px;
+  }
+ 
+  

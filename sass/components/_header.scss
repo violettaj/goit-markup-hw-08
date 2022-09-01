@@ -1,3 +1,93 @@
+@media screen and (min-width:320px) and (max-width: 768px) {
+  
+  
+  .header__nav-list{
+    display: none;
+  }
+  .header__contact-list {
+    display:none;
+  }
+  .header__logo {
+    font-size: 24px;
+    
+  }
+   
+  .header {
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+   gap:276px;
+   align-items: center;
+  
+  }  
+ 
+}
+@media screen and (min-width: 768px) and (max-width:1200px){
+  .mobile {
+    display: none;
+  }
+  .header__logo {
+    font-size: 24px;
+  }
+  .header {
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+    }
+  }
+  .header__contact-list{
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  gap:10px;
+   
+  }
+  .header__nav-list{
+    display: flex;
+    flex-direction: row;
+    gap:60px;
+  }
+}
+
+@media screen and (min-width: 1200px) { 
+  .mobile {
+    display: none;
+  }
+  .header__logo {
+    font-size: 26px;
+  }
+  .header {
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+    }
+  }
+  .header__contact-list {
+    .header__contact-item {
+      display: inline-block;
+    }
+  }
+  
+  .header__contact-list:last-child {
+    .header__contact-item {
+      margin-left: 50px;
+    }
+  }
+  .header__nav-list:nth-child(-n + 2) {
+    .header__nav-item {
+      margin-right: 46px;
+      display: inline-block;
+    }
+  }
+}
+
+
 .header__nav-link--active {
   position: relative;
 
@@ -16,7 +106,7 @@
 .header__logo {
   color: getColor("shadows");
   font-family: "Raleway";
-  font-size: 26px;
+  
   text-decoration: none;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -59,34 +149,11 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: getColor("bottom");
-
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-  }
 }
 
-.header__nav-list:nth-child(-n + 2) {
-  .header__nav-item {
-    margin-right: 46px;
-    display: inline-block;
-  }
-}
 
-.header__contact-list {
-  .header__contact-item {
-    display: inline-block;
-  }
-}
 
-.header__contact-list:last-child {
-  .header__contact-item {
-    margin-left: 50px;
-  }
-}
+
 
 .header__contact-link {
   color: getColor("descriptions");
